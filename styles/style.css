@@ -72,6 +72,7 @@ h1 {
     font-size: 9.15vw; 
     /* calculated with viewport width calculator to ensure scalability https://codepen.io/lakshmiR/pen/YGWXoo */
     margin: 0;
+    line-height: 1;
 }
 
 button,
@@ -207,7 +208,6 @@ li {
 }
 
 .titleOfHeader {
-    width: 36.1%;
     background: rgba(227, 228, 234, 0.89);
     bottom: 18.25%;
     right: 21.8%;
@@ -412,10 +412,6 @@ footer p {
         font-size: 11vw;
     }
 
-    .titleOfHeader {
-        width: 42.8%;
-    }
-
     h1 {
         font-size: 11vw;
     }
@@ -492,7 +488,6 @@ footer p {
     }
 
     .titleOfHeader {
-        width: 48.6%;
         right: 7.8%;
     }
 
@@ -567,11 +562,6 @@ footer p {
         font-size: 13vw;
     }
 
-    .titleOfHeader {
-        width: 50.8%;
-        left: 35.9%;
-    }
-
     .threeByOne img:last-of-type {
         display: none;
     }
@@ -602,7 +592,6 @@ footer p {
     }
 
     .titleOfHeader {
-        width: 60.5%;
         right: 7.8%;
     }
 
@@ -618,7 +607,6 @@ footer p {
     }
 
     .titleOfHeader {
-        width: 59.3%;
         right: 10%;
     }
     
@@ -633,11 +621,31 @@ footer p {
     h1 {
         font-size: 18vw;
     }
+}
 
+/* for landscape */
+@media (max-height: 414px) and (max-width: 811px) {
+    h1 {
+        font-size: 17vh;
+    }
 
+     .primaryNav {
+        display: none;
+    }
+
+    button {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 8px;
+        width: 55px;
+        text-decoration: none;
+        border: 0;
+        z-index: 1;
+        background: none;
+    }
+    
     .titleOfHeader {
-        left: 18.5%;
-        width: 76.5%;
-        padding-left: 3.23%;
+        bottom: 5%;
     }
 }
